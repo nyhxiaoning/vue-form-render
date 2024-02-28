@@ -25,6 +25,7 @@
   ],
   "main": "lib/vue3-form-render.common.js",
   "dependencies": {
+    "vanilla-jsoneditor": "0.5.0",
     "ant-design-vue": "^2.0.0-rc.7",
     "core-js": "^3.6.5",
     "dayjs": "^1.10.3",

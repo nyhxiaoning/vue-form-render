@@ -1,23 +1,23 @@
-import Simple from '../demos/simple';
-import Object from '../demos/object';
-import String from '../demos/string';
-import Multi from '../demos/multi';
+import { createRouter, createWebHashHistory } from 'vue-router'
+
 import All from '../demos/all';
 import Array from '../demos/array'
-import RichText from '../demos/richText'
-import Links from '../demos/links'
-import DemoIndex from '../demos/demoIndex';
-
-
-import DocsIndex from '../docs/docsIndex';
 import Demo from '../docs/demo';
-import DocsString from '../docs/string';
-import DocsNumber from '../docs/number';
-import DocsBoolean from '../docs/boolean';
+import DemoIndex from '../demos/demoIndex';
 import DocsArray from '../docs/array';
+import DocsBoolean from '../docs/boolean';
+import DocsIndex from '../docs/docsIndex';
 import DocsList from '../docs/list';
+import DocsNumber from '../docs/number';
 import DocsObject from '../docs/object';
-import { createRouter, createWebHashHistory } from 'vue-router'
+import DocsString from '../docs/string';
+import JsonEditor from '../demos/jsoneditor'
+import Links from '../demos/links'
+import Multi from '../demos/multi';
+import Object from '../demos/object';
+import RichText from '../demos/richText'
+import Simple from '../demos/simple';
+import String from '../demos/string';
 
 const routes = [
   {
@@ -29,6 +29,11 @@ const routes = [
         path: '',
         name: 'simple',
         component: Simple
+      },
+      {
+        path: '/json1',
+        name: 'json1',
+        component: JsonEditor
       },
       {
         path: '/all',
